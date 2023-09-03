@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void addRoleToUser(String username, String roleName) {
-        CasinoUser casinoUser = casinoUserRepository.findCasinoUserBy(username);
+        CasinoUser casinoUser = casinoUserRepository.findCasinoUserByUsername(username);
         UserRole userRole = casinoUserRoleRepository.findByName(roleName);
         log.info("Adding role {} to user {}", userRole.getName(), casinoUser.getUsername());
         casinoUser.getRoles().add(userRole);
@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public CasinoUser getUser(String username) {
         log.info("Find user from DB with username {}", username);
-        return casinoUserRepository.findCasinoUserBy(username);
+        return casinoUserRepository.findCasinoUserByUsername(username);
     }
 
     @Override
