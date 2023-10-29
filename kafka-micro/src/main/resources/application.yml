@@ -1,0 +1,12 @@
+project:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer.group.id: your-consumer-group
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties.spring.json.value.default.type: your.package.YourMessageClass
+      auto-offset-reset: earliest
