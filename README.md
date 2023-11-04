@@ -13,8 +13,10 @@
 
 Перед использованием класса `KafkaMessageListener` убедитесь, что у вас есть следующее:
 
-- Запущенный брокер Kafka. (bin/zookeeper-server-start.sh config/zookeeper.properties)
-- Настроенные Spring Boot или Spring Kafka в вашем проекте. (bin/kafka-server-start.sh config/server.properties)
+- Запущенный Zookeeper.
+  bin/zookeeper-server-start.sh config/zookeeper.properties
+- Запущен сервер для Kafka
+  bin/kafka-server-start.sh config/server.properties
 
 ## Настройка
 
