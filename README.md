@@ -14,9 +14,9 @@
 Перед использованием класса `KafkaMessageListener` убедитесь, что у вас есть следующее:
 
 - Запущенный Zookeeper.
-  bin/zookeeper-server-start.sh config/zookeeper.properties
+  ./bin/zookeeper-server-start.sh config/zookeeper.properties
 - Запущен сервер для Kafka
-  bin/kafka-server-start.sh config/server.properties
+  ./bin/kafka-server-start.sh config/server.properties
 
 ## Настройка
 
@@ -82,3 +82,10 @@
 
 <img width="2560" alt="Снимок экрана 2023-10-29 в 15 40 45" src="https://github.com/Pekar7/kafka-message/assets/90376574/59b77769-7b0c-4337-978a-7a9dff39790a">
 
+
+##
+##
+## NEW UI FROM IDEA
+<img width="2560" alt="Снимок экрана 2023-11-04 в 15 44 45" src="https://github.com/Pekar7/kafka-message/assets/90376574/7e95ab06-58a9-453c-af58-bd831daac702">
+<img width="2560" alt="Снимок экрана 2023-11-04 в 15 45 22" src="https://github.com/Pekar7/kafka-message/assets/90376574/c3deb694-02df-4456-859b-65e12ae34736">
+<img width="2560" alt="Снимок экрана 2023-11-04 в 15 38 44" src="https://github.com/Pekar7/kafka-message/assets/90376574/f4b6ee0b-22a5-4586-bd2e-628f59967ceb">
